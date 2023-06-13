@@ -1,0 +1,168 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:14px;
+    font-family:"Porto";
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+}
+
+#navbar{
+    position:fixed;
+    z-index:3
+}
+
+#navbar, .NavBorder li{
+    background-color:black;
+    text-align:center;
+    width:100%
+}
+
+#navbar ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#navbar li{
+    display:inline;
+    
+}
+
+#navbar a{
+    color:#ddd;
+    text-decoration: none;
+    font-size:27px;
+    font-family: "Anders";
+    padding-right:30px;
+    padding-left:30px; 
+    padding-top:10px;
+    padding-bottom:10px
+}
+
+
+    
+#navbar a:hover{
+    background-color:black;
+}
+
+.img4, .img5, .img6, .img7{
+    position: relative;
+    opacity:0.95;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.img4{
+    background-image:url("../images/img4.jpg");
+    min-height:600px;
+}
+.img5{
+    background-image:url("../images/img5.jpg");
+    min-height:600px;
+}
+.img6{
+    background-image:url("../images/img6.jpeg");
+    min-height:600px;
+    
+}
+.img7{
+    background-image:url("../images/img7.jpg");
+    min-height:600px;
+
+}
+.Indroduction-Video{
+    background-image:url("Indroduction Video.MOV");
+    min-height:600px;
+
+}
+.Dark{
+    text-align:center;
+    padding:50px 80px;
+}
+
+.Dark{
+    background-color:black;
+    color:#ddd;
+    font-size: 20px;
+}
+
+.paratext{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#ddd;
+    font-size:27px;
+    font-family: "Anders";
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.paratext a{
+    text-decoration:none;
+}
+
+.border{
+    background-color:black;
+    color:#ddd;
+    padding:20px; 
+    opacity:0.85;
+}
+
+.border2{
+    background-color:black;
+    color:#ddd;
+    padding:20px; 
+    opacity:0.85;
+}
+
+.border a:visited{
+    color:#ddd
+}
+.border2 a:visited{
+    color:black;
+}
+
+
+.dropbtn {
+  background-color: #666;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #282e34;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #FF0000;}
+
+.show {display: block;}

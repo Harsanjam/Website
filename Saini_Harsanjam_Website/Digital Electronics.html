@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Electronics</title>
+    <script src="js/dropdown.js"></script>
+    <link rel="stylesheet" href="css/style8.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div class="Navborder">
+            
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="About.html">About Me</a></li>
+                 <li><a href="Career.html">Career</a></li>
+                 <li><a href="Contact.html">Contact</a></li>
+                 
+                 
+                 <div class="dropdown">
+                    <button onclick="myFunction()"class="dropbtn">Units</button>
+                    <div id="myDropdown" class="dropdown-content">
+                            <a href="Basic Electronics.html">Electronics</a>
+                            <a href="Web Development.html">Web Development</a>
+                            <a href="Programming.html">Programming</a>
+                            <a href="Digital Electronics.html">Digital Electronics</a>
+                </div>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="img25">
+        <div class="paratext">
+            <span class="border">
+                Conversions
+            </span>
+        </div>
+    </div>
+    <section class="Dark">
+    <h2>Place Value Charts</h2>
+        <h5>Decimal</h5>
+        <table>
+            <thead>
+                <th>10<sup>4</sup></th>
+                <th>10<sup>3</sup></th>
+                <th>10<sup>2</sup></th>
+                <th>10<sup>1</sup></th>
+                <th>10<sup>0</sup></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10000</td>
+                    <td>1000</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5>Binary</h5>
+        <table>
+            <thead>
+                <th>2<sup>4</sup></th>
+                <th>2<sup>3</sup></th>
+                <th>2<sup>2</sup></th>
+                <th>2<sup>1</sup></th>
+                <th>2<sup>0</sup></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>16</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5>Quaternary</h5>
+        <table>
+            <thead>
+                <th>16<sup>4</sup></th>
+                <th>16<sup>3</sup></th>
+                <th>16<sup>2</sup></th>
+                <th>16<sup>1</sup></th>
+                <th>16<sup>0</sup></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>256</td>
+                    <td>64</td>
+                    <td>16</td>
+                    <td>4</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5>Octal</h5>
+        <table>
+            <thead>
+                <th>8<sup>4</sup></th>
+                <th>8<sup>3</sup></th>
+                <th>8<sup>2</sup></th>
+                <th>8<sup>1</sup></th>
+                <th>8<sup>0</sup></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>4096</td>
+                    <td>512</td>
+                    <td>64</td>
+                    <td>8</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5>Hexa-Decimal</h5>
+        <table>
+            <thead>
+                <th>16<sup>4</sup></th>
+                <th>16<sup>3</sup></th>
+                <th>16<sup>2</sup></th>
+                <th>16<sup>1</sup></th>
+                <th>16<sup>0</sup></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>65536</td>
+                    <td>4096</td>
+                    <td>256</td>
+                    <td>16</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        
+    <div class="img26">
+        <div class="paratext">
+            <span class="border">
+                Logic Gates
+            </span>
+        </div>
+    </div>
+    <section class="Dark">
+        <p> A logic gate is an elementary building block of a digital circuit. Most logic gates have two inputs and one output. At any given moment, every terminal is in one of the two binary conditions low (0) or high (1), represented by different voltage levels. The logic state of a terminal can, and generally does, change often, as the circuit processes data. In most logic gates, the low state is approximately zero volts (0 V), while the high state is approximately five volts positive (+5 V).</p>
+    </section>
+
+
+    <div class="img27">
+        <div class="paratext">
+            <span class="border">
+                AND Gate
+            </span>
+        </div>
+    </div>
+       
+    <section class="Dark">
+            
+        <h4>Truth Table:</h4>
+            <table>
+                    <thead>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Y</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Boolean Expression: Y = AB</p>
+                <p>General Rule: If all of the inputs are 1s then the output is a 1. If there is at least one 0 as an input then the output is 0.</p>
+        
+        </section>
+
+    <div class="img28">
+        <div class="paratext">
+            <span class="border2">
+                OR Gate
+            </span>
+         </div>
+    </div>
+    <section class="Dark">
+        
+            <h4>Truth Table:</h4>
+            <table>
+                    <thead>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Y</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Boolean Expression: Y = A + B</p>
+                <p>General Rule: If one or more of the inputs is a 1 then the output is a 1, if all of the inputs are 0s then the output is a 0.</p>
+  
+    </section>
+    
+    <div class="img29">
+        <div class="paratext">
+            <span class="border2">
+                NOT Gate
+            </span>
+         </div>
+    </div>
+    <section class="Dark">
+            <p>Truth Table:</p>
+            <table>
+                    <thead>
+                        <th>A</th>
+                        <th>Y</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Boolean Expression: Y = A'</p>
+                <p>General Rule:</p>
+                <p>Output is the opposite of the input (if 1 is the input then 0 is the output and vice versa).</p>
+    </section>
+        
+    <div class="img30">
+            <div class="paratext">
+                <span class="border2">
+                    NAND Gate
+                </span>
+             </div>
+    </div>
+        <section class="Dark">
+                
+            <p>Truth Table:</p>
+                <table>
+                        <thead>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Y</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Boolean Expression: Y = (AB)'</p>
+                    <p>General Rule:</p>
+                    <p>Opposite output of AND logic gate.</p>
+        </section>
+
+     <div class="img31">
+            <div class="paratext">
+                <span class="border2">
+                    NOR Gate
+                </span>
+            </div>
+    </div>
+    <section class="Dark">
+            <p>Truth Table:</p>
+            <table>
+                    <thead>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Y</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Boolean Expression: Y = (A+B)'</p>
+                <p>General Rule:</p>
+                <p>Opposite output of OR logic gate.</p>
+
+    </section>
+
+    <div class="img32">
+            <div class="paratext">
+                <span class="border2">
+                    XOR Gate
+                </span>
+            </div>
+    </div>
+    <section class="Dark">
+            <p>Truth Table:</p>
+            <table>
+                    <thead>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Y</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Boolean Expression: Y = A⊕B</p>
+                <p>General Rule:</p>
+                <p>If there are an even number of 1s the output is 0, if there are an odd number of 1s then the output is 1.</p>
+    </section>    
+
+ 
+    <div class="img33">
+        <div class="paratext">
+            <span class="border2">
+                XNOR Gate
+            </span>
+        </div>
+</div>
+<section class="Dark">
+        <p>Truth Table:</p>
+        <table>
+                <thead>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>X</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Boolean Expression: X = (A⊕B)'</p>
+            <p>General Rule:</p>
+            <p>Opposite output of NOR logic gate.</p>
+
+ </section>    
+
+ <div class="img34">
+        <div class="paratext">
+            <span class="border2">
+                Karnaugh Maps
+            </span>
+        </div>
+</div>
+<section class="Dark">
+    <p>Karnaugh Maps or K Maps are a very useful tool to simplify boolean algebra expressions. Here is a video I suggest looking at if you are trying to learn how to use Karnaugh Maps.</p>
+</section>
+
+</body>
+</html>

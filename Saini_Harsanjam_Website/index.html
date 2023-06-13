@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <script src="javascript/Dropdown.js"></script>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+     <!--navbar-->
+    <nav id="navbar">
+        <div class="Navborder">
+    
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                 <li><a href="Career.html">Career</a></li>
+                 <li><a href="Contact.html">Contact</a></li>
+                 
+                 <div class="dropdown">
+                    <button onclick="myFunction()"class="dropbtn">Units</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="Basic Electronics.html">Electronics</a>
+                      <a href="Web Development.html">Web Development</a>
+                      <a href="Programming.html">Programming</a>
+                      <a href="Digital Electronics.html">Digital Electronics</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+        
+<!--fixed image attachment-->
+    <div class="img1">
+        <div class="paratext">
+            <span class="border2">
+                Computer Engineering
+            </span>
+        </div>
+    </div>
+
+    <section class="Dark">
+        <h2>Course Description</h2>
+        <p>This course examines computer systems and control of external devices. Students will develop
+            knowledge and skills in electronics, interfacing, programming, and networks, will build systems that
+            use computer programs and interfaces to control and respond to external devices. Students will
+            develop an awareness of related environmental and societal issues, and will learn about college and
+            university programs leading to careers in computer technology.</p>
+    </section>
+<!--fixed image attachment-->
+    <div class="img2">
+        <div class="paratext">
+            <span class="border">
+                Units
+            </span>
+        </div>
+    </div>
+
+    <section class="Light">
+            <h2>Units</h2>
+            <p>Web Development, Basic Electronics, Programming, Digital Electronics, Interfacing</p>
+        </section>
+<!--fixed image attachment-->
+    <div class="img3">
+        <div class="paratext">
+            <span class="border2">
+                Assessment Guidlines
+            </span>
+         </div>
+    </div>
+        
+    <section class="Dark">
+    <!--table-->
+        <table>
+            <thead>
+              <tr>
+                <th>Communication (14%)</th>
+                <th>Knowledge/Understanding (14%)</th>
+                <th>Thinking (14%)</th>
+                <th>Application (28%)</th>
+                <th>Culminating Activity and Final Exam (20%) + E-Portfolio (10%)</th>
+              </tr>
+            </thead>
+            <tbody>
+                <!--column 1-->
+              <tr>
+                <td>The conveying of meaning
+                    through various forms as follows:
+                    <ul>
+                        <li>
+                            Oral (discussion,
+                            presentations)
+                        </li>
+                        <li>
+                            Written (design briefs,
+                            technical reports)
+                        </li>
+                        <li>
+                            Visual (schematics, flow
+                            charts, graphics)
+                        </li>
+                    </ul> 
+                </td>
+                    <!--column 2-->
+                <td>Knowledge/Understanding of:
+                        <ul>
+                                <li>
+                                Each course unit   
+                                <li>
+                                Terminology used  
+                                </li>
+                                <li>
+                                 Principles           
+                                </li>
+                                <li>
+                                Concepts
+                                </li>
+                                <li>
+                                Comprehension
+                                of its meaning and significance in
+                                Computer Engineering
+                                </li>
+                            </ul> 
+                </td>
+                    <!--column 3-->
+                <td>The use of critical and creative
+                    thinking skills and processes as
+                    follows:
+                    <ul>
+                        <li>
+                         Problem-Solving Skills
+                        </li>
+                        <li>
+                        Analysis/Evaluation Skills
+                        </li>
+                        <li>
+                         Design Skills
+                        </li>
+                        <li>
+                         Decision-making process
+                        </li>
+                    </ul>
+                </td>
+                    <!--column 4-->
+                <td>The use of knowledge and
+                    skills to make connections
+                    within and between various
+                    contexts.
+                </td>
+
+                <td>The use of knowledge and
+                    skills to make connections
+                    within and between various
+                    contexts.
+                 </td>
+                     
+            </tbody>
+        
+          </table>
+
+        <h4>School Ends in</h4>
+          <div class="countdown" id="countdown1">
+                  <span class="timeel days">00</span>
+                  <span class="timeel timeRefDays">days</span>
+                  <span class="timeel hours">00</span>
+                  <span class="timeel timeRefHours">hours</span>
+                  <span class="timeel minutes">00</span>
+                  <span class="timeel timeRefMinutes">minutes</span>
+                  <span class="timeel seconds">00</span>
+                  <span class="timeel timeRefSeconds">seconds</span>
+                  </div>
+  
+          <script>
+          window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                window.onload = function() {
+                
+                  countDownToTime("June 28, 2019 15:10:00", 'countdown1');
+                }
+                function countDownToTime(countTo, id) {
+                  countTo = new Date(countTo).getTime();
+                  var now = new Date(),
+                      countTo = new Date(countTo),
+                      timeDifference = (countTo - now);
+                      
+                  var secondsInADay = 60 * 60 * 1000 * 24,
+                      secondsInAHour = 60 * 60 * 1000;
+                
+                  days = Math.floor(timeDifference / (secondsInADay) * 1);
+                  hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+                  mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+                  secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+                
+                  var idEl = document.getElementById(id);
+                  idEl.getElementsByClassName('days')[0].innerHTML = days;
+                  idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+                  idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+                  idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+                
+                  clearTimeout(countDownToTime.interval);
+                  countDownToTime.interval = setTimeout(function(){ countDownToTime(countTo, id); },1000);
+                }
+          </script>
+
+        
+    </body>
+</html>
